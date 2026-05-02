@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiropraxia San Pablo | Alivio Crónico para Emprendedores</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -15,24 +14,22 @@
                     },
                     colors: {
                         brand: {
-                            dark: '#0f172a',    // Slate 900 - Sofisticado y fuerte
+                            dark: '#0f172a',    // Slate 900
                             primary: '#1e293b', // Slate 800
-                            accent: '#ea580c',  // Naranja moderno para conversión
+                            accent: '#ea580c',  // Naranja moderno
                             accentHover: '#c2410c',
                             light: '#f8fafc'    // Fondo limpio
                         }
                     },
                     boxShadow: {
                         'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
-                        'glow': '0 0 20px rgba(234, 88, 12, 0.3)'
+                        'glow': '0 0 20px rgba(234, 88, 12, 0.4)'
                     }
                 }
             }
         }
     </script>
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Plus Jakarta Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         html { scroll-behavior: smooth; }
@@ -44,18 +41,15 @@
 </head>
 <body class="bg-brand-light text-slate-700 antialiased selection:bg-brand-accent selection:text-white">
 
-    <!-- Top Bar -->
     <div class="bg-brand-dark text-white text-center py-2.5 text-xs sm:text-sm font-semibold tracking-widest uppercase">
         <span class="inline-block animate-pulse text-brand-accent mr-2">●</span> ATENCIÓN MORÓN Y ALREDEDORES
     </div>
 
-    <!-- Hero Section (NUEVO DISEÑO A 2 COLUMNAS) -->
     <section class="relative pt-16 pb-20 overflow-hidden">
         <div class="absolute inset-0 bg-pattern opacity-50 z-0"></div>
         
         <div class="max-w-7xl mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             
-            <!-- Columna Izquierda: Textos y Llamado a la acción -->
             <div class="w-full lg:w-1/2 text-center lg:text-left">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-orange-800 text-sm font-bold uppercase tracking-wider mb-8 shadow-sm border border-orange-200">
                     <i class="fa-solid fa-triangle-exclamation"></i> Si sufres de dolor hace más de 6 meses
@@ -66,31 +60,26 @@
                 </h1>
                 
                 <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Si ya probaste masajes, kinesiología u osteopatía sin resultados definitivos... descubre el protocolo que te dará un <strong>50% de alivio en solo 4 semanas</strong> corrigiendo el problema de raíz.
+                    Si ya probaste masajes o kinesiología sin resultados definitivos... descubre el protocolo que te dará un <strong>50% de alivio en 4 semanas</strong> corrigiendo la raíz del problema.
                 </p>
 
                 <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-                    <a href="#agendar" class="inline-block bg-gradient-to-r from-brand-accent to-orange-500 hover:from-orange-500 hover:to-brand-accentHover text-white font-bold text-lg md:text-xl py-4 px-10 rounded-xl shadow-glow transform transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto text-center">
-                        Sí, Quiero Agendar Mi Evaluación
+                    <a href="#agendar" class="inline-block bg-gradient-to-r from-brand-accent to-orange-500 hover:from-orange-500 hover:to-brand-accentHover text-white font-bold text-lg py-4 px-8 rounded-xl shadow-glow transform transition-all duration-300 hover:-translate-y-1 text-center w-full sm:w-auto border border-orange-400">
+                        <span class="block text-sm font-medium text-orange-100 mb-1">🎁 DE REGALO CON TU EVALUACIÓN:</span>
+                        Agendar y Recibir el Test de 3 Pasos
                     </a>
                 </div>
                 <p class="text-sm text-slate-500 mt-5 font-medium flex items-center justify-center lg:justify-start gap-2">
-                    <i class="fa-solid fa-shield-check text-green-500"></i> Evaluaciones estrictamente bajo análisis exhaustivo.
+                    <i class="fa-solid fa-shield-check text-green-500"></i> Evaluaciones bajo estricto análisis exhaustivo.
                 </p>
             </div>
 
-            <!-- Columna Derecha: Foto del Profesional -->
             <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
                 <div class="relative group max-w-lg mx-auto lg:max-w-full">
-                    <!-- Efecto de brillo de fondo -->
                     <div class="absolute -inset-2 bg-gradient-to-r from-slate-200 to-slate-300 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition duration-1000"></div>
-                    
-                    <!-- Contenedor de la foto -->
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-white aspect-[4/3] lg:aspect-square object-cover flex items-center justify-center">
                         <img src="foto-principal.jpg" alt="Licenciado Joaquín trabajando" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x800?text=Guarda+tu+foto+aqui+como+foto-principal.jpg';">
                     </div>
-                    
-                    <!-- Etiqueta flotante sobre la foto -->
                     <div class="absolute -bottom-5 -left-5 lg:-left-10 bg-white p-4 rounded-xl shadow-xl border border-slate-100 flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
                         <div class="bg-green-100 text-green-600 w-10 h-10 rounded-full flex items-center justify-center text-xl">
                             <i class="fa-solid fa-user-doctor"></i>
@@ -106,7 +95,6 @@
         </div>
     </section>
 
-    <!-- Social Proof Block 1 (Early Validation - 3 Testimonios) -->
     <section class="bg-white py-16 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-12">
@@ -114,7 +102,6 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Testimonio 1 -->
                 <div class="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
                     <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                     <p class="text-slate-600 text-sm italic leading-relaxed flex-grow">"Antes de empezar a hacerme ajustes en este lugar sufría de dolores constantes en la espalda baja y el cuello, acompañado de mucho estrés y dificultades para mis tareas cotidianas... En estos meses las mejoras empezaron a sentirse, me siento renovado y disfruto actividades que antes me costaba mucho realizar."</p>
@@ -127,7 +114,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonio 2 -->
                 <div class="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
                     <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                     <p class="text-slate-600 text-sm italic leading-relaxed flex-grow">"Mi problema era hernia de discos... muchos dolores en ambas piernas, hormigueos... recurrí a un bastón (ya no lo uso). Me recomendó el Lic. Joaquín el tratamiento de tres meses... ya no tengo esas molestias, lento pero muy eficaz. Se los recomiendo, no duden es MUY BUENO."</p>
@@ -140,7 +126,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonio 3 -->
                 <div class="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
                     <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                     <p class="text-slate-600 text-sm italic leading-relaxed flex-grow">"Después de meses de tener constante dolor cervical, dorsal y lumbar llegar a Quiropraxiasanpablo me cambió la vida. Desapareció el dolor y toda esa carga que sentía en mi espalda desapareció. Infinitamente agradecida. 🙏😊"</p>
@@ -156,7 +141,6 @@
         </div>
     </section>
 
-    <!-- The Filter (Who is this for) -->
     <section class="py-20 bg-slate-50">
         <div class="max-w-3xl mx-auto px-4">
             
@@ -194,11 +178,9 @@
         </div>
     </section>
 
-    <!-- The Method (Building Trust & Probability of Success) -->
     <section class="py-20 bg-white border-y border-slate-200 overflow-hidden">
         <div class="max-w-6xl mx-auto px-4">
             
-            <!-- NUEVO BLOQUE: Título + Foto analizando placas -->
             <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
                 <div class="lg:w-1/2 text-center lg:text-left">
                     <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark tracking-tight mb-4">No "adivinamos" con tu columna.</h2>
@@ -208,116 +190,113 @@
                     </p>
                 </div>
                 
-                <!-- Contenedor de la nueva foto (AJUSTADO PARA NO CORTAR LA FOTO) -->
                 <div class="lg:w-1/2 w-full relative px-2 sm:px-0 mt-8 lg:mt-0">
-                    <!-- Decoración sutil detrás de la foto -->
                     <div class="absolute -inset-1 sm:-inset-2 lg:-inset-4 bg-slate-100 rounded-3xl transform rotate-3 z-0"></div>
                     <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10 bg-white">
-                        <!-- h-auto asegurará que se mantenga el formato original -->
                         <img src="foto-placas.jpg" alt="Licenciado analizando radiografías" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x450?text=Guarda+tu+foto+aqui+como+foto-placas.jpg';">
                     </div>
                 </div>
             </div>
             
-            <!-- 3 PASOS EN UNA SOLA LÍNEA -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Step 1 -->
                 <div class="bg-white p-8 rounded-3xl shadow-soft border border-slate-100 transition-all hover:shadow-xl hover:-translate-y-2 group flex flex-col items-center text-center">
-                    <div class="bg-slate-100 text-slate-500 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
-                        Paso 1
-                    </div>
-                    <div class="w-16 h-16 rounded-2xl bg-slate-50 text-brand-primary flex items-center justify-center mb-6 text-2xl shadow-sm border border-slate-100 group-hover:scale-110 transition-transform duration-300 group-hover:bg-brand-primary group-hover:text-white">
-                        <i class="fa-solid fa-x-ray"></i>
-                    </div>
+                    <div class="bg-slate-100 text-slate-500 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">Paso 1</div>
+                    <div class="w-16 h-16 rounded-2xl bg-slate-50 text-brand-primary flex items-center justify-center mb-6 text-2xl shadow-sm border border-slate-100 group-hover:scale-110 transition-transform duration-300 group-hover:bg-brand-primary group-hover:text-white"><i class="fa-solid fa-x-ray"></i></div>
                     <h4 class="text-xl font-bold text-brand-dark mb-4">Evaluación Analítica</h4>
-                    <p class="text-slate-600 leading-relaxed text-sm lg:text-base">A diferencia de otros, <strong>no tocamos tu columna el primer día</strong>. Exigimos radiografías y evaluamos a fondo. Si no es seguro, te lo diremos. Decisiones reales basadas en datos.</p>
+                    <p class="text-slate-600 leading-relaxed text-sm lg:text-base">A diferencia de otros, <strong>no tocamos tu columna el primer día</strong>. Exigimos radiografías y evaluamos a fondo. Decisiones reales basadas en datos.</p>
                 </div>
 
-                <!-- Step 2 -->
                 <div class="bg-white p-8 rounded-3xl shadow-soft border border-slate-100 transition-all hover:shadow-xl hover:-translate-y-2 group flex flex-col items-center text-center ring-1 ring-brand-accent/10 relative">
-                    <!-- Detalle visual superior para resaltar el paso central -->
                     <div class="absolute top-0 inset-x-0 h-1 bg-brand-accent rounded-t-3xl"></div>
-                    
-                    <div class="bg-orange-50 text-brand-accent text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
-                        Paso 2
-                    </div>
-                    <div class="w-16 h-16 rounded-2xl bg-orange-50 text-brand-accent flex items-center justify-center mb-6 text-2xl shadow-sm border border-orange-100 group-hover:scale-110 transition-transform duration-300 group-hover:bg-brand-accent group-hover:text-white">
-                        <i class="fa-solid fa-clipboard-check"></i>
-                    </div>
+                    <div class="bg-orange-50 text-brand-accent text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">Paso 2</div>
+                    <div class="w-16 h-16 rounded-2xl bg-orange-50 text-brand-accent flex items-center justify-center mb-6 text-2xl shadow-sm border border-orange-100 group-hover:scale-110 transition-transform duration-300 group-hover:bg-brand-accent group-hover:text-white"><i class="fa-solid fa-clipboard-check"></i></div>
                     <h4 class="text-xl font-bold text-brand-dark mb-4">Reporte y Plan</h4>
                     <p class="text-slate-600 leading-relaxed text-sm lg:text-base">Te mostramos en tus placas el origen del dolor. Aquí determinamos si calificas para ingresar a nuestro <strong>Sistema de Recuperación Vertebral Óptimo</strong>.</p>
                 </div>
 
-                <!-- Step 3 -->
                 <div class="bg-white p-8 rounded-3xl shadow-soft border border-slate-100 transition-all hover:shadow-xl hover:-translate-y-2 group flex flex-col items-center text-center">
-                    <div class="bg-slate-100 text-slate-500 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
-                        Paso 3
-                    </div>
-                    <div class="w-16 h-16 rounded-2xl bg-slate-50 text-brand-primary flex items-center justify-center mb-6 text-2xl shadow-sm border border-slate-100 group-hover:scale-110 transition-transform duration-300 group-hover:bg-brand-primary group-hover:text-white">
-                        <i class="fa-solid fa-person-running"></i>
-                    </div>
+                    <div class="bg-slate-100 text-slate-500 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">Paso 3</div>
+                    <div class="w-16 h-16 rounded-2xl bg-slate-50 text-brand-primary flex items-center justify-center mb-6 text-2xl shadow-sm border border-slate-100 group-hover:scale-110 transition-transform duration-300 group-hover:bg-brand-primary group-hover:text-white"><i class="fa-solid fa-person-running"></i></div>
                     <h4 class="text-xl font-bold text-brand-dark mb-4">Alivio y Corrección</h4>
                     <p class="text-slate-600 leading-relaxed text-sm lg:text-base">Apagamos en 4 semanas ese dolor incapacitante ("como un perro mordiendo"). A los 90 días habremos corregido la raíz del problema estructural.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- CTA / Lead Capture Form Section -->
     <section id="agendar" class="pt-20 pb-24 bg-brand-dark relative overflow-hidden">
-        <!-- Decoración de fondo -->
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-brand-accent opacity-20 blur-3xl"></div>
         <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-500 opacity-10 blur-3xl"></div>
         
-        <!-- Contenedor del Formulario -->
-        <div class="max-w-xl mx-auto px-4 text-center mb-24 relative z-10">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">¿Listo para dar el primer paso?</h2>
-            <p class="text-slate-400 mb-10 text-lg">Solicita tu Evaluación Diagnóstica. Nos contactaremos para coordinar tu primera visita (solo análisis de datos, sin compromisos forzados).</p>
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
             
-            <form class="bg-white p-8 md:p-10 rounded-3xl shadow-2xl text-left" onsubmit="enviarWhatsApp(event)">
-                <div class="mb-5">
-                    <label class="block text-brand-primary text-sm font-bold mb-2 uppercase tracking-wide" for="name">Nombre Completo</label>
-                    <input class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition-all" id="name" type="text" placeholder="Ej. Juan Pérez" required>
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                
+                <div class="w-full md:w-5/12 bg-gradient-to-br from-slate-50 to-slate-100 p-8 md:p-10 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-center items-center text-center">
+                    <div class="bg-red-100 text-red-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-6 inline-block border border-red-200">
+                        Regalo Exclusivo por Agendar
+                    </div>
+                    
+                    <!-- NUEVA MINIATURA DEL PDF -->
+                    <div class="w-32 md:w-40 rounded-lg shadow-xl mb-6 transform -rotate-3 hover:rotate-0 transition-transform duration-300 border border-slate-200 overflow-hidden bg-white">
+                        <img src="portada-pdf.png" alt="Portada del Test Postural" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x420/ea580c/ffffff?text=Tu+Portada+Aqui';">
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Manual: Test de Rescate Postural</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Completa tus datos para coordinar tu Evaluación y <strong>el PDF se descargará automáticamente en tu dispositivo</strong>, además de abrir WhatsApp para confirmar tu lugar.
+                    </p>
+                    <p class="text-sm font-semibold italic text-brand-accent">
+                        "No busques perfección, buscá menos daño."
+                    </p>
+                </div>
+
+                <div class="w-full md:w-7/12 p-8 md:p-10">
+                    <h3 class="text-2xl font-extrabold text-brand-dark mb-6">Solicita tu Evaluación Diagnóstica</h3>
+                    
+                    <form onsubmit="enviarWhatsApp(event)">
+                        <div class="mb-5">
+                            <label class="block text-slate-700 text-xs font-bold mb-2 uppercase tracking-wide" for="name">Nombre Completo</label>
+                            <input class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition-all" id="name" type="text" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        
+                        <div class="mb-5">
+                            <label class="block text-slate-700 text-xs font-bold mb-2 uppercase tracking-wide" for="phone">Teléfono (WhatsApp)</label>
+                            <input class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition-all" id="phone" type="tel" placeholder="+54 9 11..." required>
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="block text-slate-700 text-xs font-bold mb-2 uppercase tracking-wide" for="time">Tiempo con dolor</label>
+                            <div class="relative">
+                                <select class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 appearance-none leading-tight focus:outline-none focus:bg-white focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition-all" id="time">
+                                    <option>Menos de 1 mes (No califica)</option>
+                                    <option selected>De 1 a 6 meses</option>
+                                    <option>Más de 6 meses (Crónico)</option>
+                                    <option>Años probando de todo</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+                                    <i class="fa-solid fa-chevron-down text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-dark hover:bg-brand-primary text-white font-bold py-4 px-4 rounded-xl shadow-lg focus:outline-none focus:ring-4 focus:ring-brand-dark/50 text-lg transition-all transform hover:-translate-y-0.5 flex flex-col items-center justify-center">
+                            <span>Agendar Mi Evaluación</span>
+                            <span class="text-xs text-brand-accent mt-1 font-medium tracking-wide">+ DESCARGA AUTOMÁTICA DEL TEST</span>
+                        </button>
+                        <div class="flex items-center justify-center mt-5 text-slate-400 text-xs font-medium">
+                            <i class="fa-solid fa-lock mr-2"></i> Datos 100% seguros y confidenciales.
+                        </div>
+                    </form>
                 </div>
                 
-                <div class="mb-5">
-                    <label class="block text-brand-primary text-sm font-bold mb-2 uppercase tracking-wide" for="phone">Teléfono (WhatsApp)</label>
-                    <input class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition-all" id="phone" type="tel" placeholder="+54 9 11..." required>
-                </div>
-
-                <div class="mb-8">
-                    <label class="block text-brand-primary text-sm font-bold mb-2 uppercase tracking-wide" for="time">Tiempo con dolor</label>
-                    <div class="relative">
-                        <select class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 appearance-none leading-tight focus:outline-none focus:bg-white focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition-all" id="time">
-                            <option>Menos de 1 mes (No califica)</option>
-                            <option selected>De 1 a 6 meses</option>
-                            <option>Más de 6 meses (Crónico)</option>
-                            <option>Años probando de todo</option>
-                        </select>
-                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
-                            <i class="fa-solid fa-chevron-down text-sm"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="submit" class="w-full bg-gradient-to-r from-brand-accent to-orange-500 hover:from-orange-500 hover:to-brand-accentHover text-white font-bold py-4 px-4 rounded-xl shadow-lg focus:outline-none focus:ring-4 focus:ring-orange-500/50 text-lg transition-all transform hover:-translate-y-0.5">
-                    Solicitar Mi Evaluación por WhatsApp
-                </button>
-                <div class="flex items-center justify-center mt-5 text-slate-400 text-xs font-medium">
-                    <i class="fa-solid fa-lock mr-2"></i> Datos 100% seguros y confidenciales.
-                </div>
-            </form>
+            </div>
         </div>
 
-        <!-- Contenedor de las Reseñas de Cierre -->
-        <div class="max-w-7xl mx-auto px-4 border-t border-slate-800/50 pt-16 relative z-10 text-center">
+        <div class="max-w-7xl mx-auto px-4 border-t border-slate-800/50 pt-16 mt-16 relative z-10 text-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-12 tracking-tight">Más historias de pacientes satisfechos</h3>
             
-            <!-- Cuadrícula de Textos (3 en línea estilo Dark Mode) -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                <!-- Testimonio 4 -->
                 <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors">
                     <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                     <p class="text-slate-300 text-sm italic leading-relaxed flex-grow">"Excelente lugar y diría de los pocos para ese tipo de tratamiento con tanta vocación. En mi caso ya había probado de todo y fui mejorando poco a poco, lo importante es la constancia... El licenciado se toma el tiempo y explica todo... recomiendo sin dudas."</p>
@@ -330,7 +309,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonio 5 -->
                 <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors">
                     <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                     <p class="text-slate-300 text-sm italic leading-relaxed flex-grow">"Empecé por largos años de molestia y dolor lumbar sintiendo que algo no estaba bien en mi postura y viniendo confirmé mis sospechas! Super profesional, explicativo, amable y cálido en sus recomendaciones y trabajo, super recomiendo!"</p>
@@ -343,7 +321,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonio 6 -->
                 <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors">
                     <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                     <p class="text-slate-300 text-sm italic leading-relaxed flex-grow">"Llegué con un dolor crónico de años, habiendo probado masajes sin éxito. Desde que arranqué el tratamiento noté un cambio rotundo. Volví a dormir de corrido y recuperar mi energía. 100% recomendable, súper profesionales."</p>
@@ -356,12 +333,9 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-
     </section>
 
-    <!-- Footer -->
     <footer class="bg-[#080f1e] py-10 text-center text-slate-500 text-sm border-t border-slate-800">
         <div class="max-w-4xl mx-auto px-4">
             <p class="font-semibold text-slate-400 mb-2">&copy; 2024 Quiropraxia San Pablo. Todos los derechos reservados.</p>
@@ -371,22 +345,36 @@
 
     <script>
         function enviarWhatsApp(event) {
-            event.preventDefault(); // Evita que la página se recargue
+            event.preventDefault(); 
             
+            // 1. FORZAMOS LA DESCARGA AUTOMÁTICA DEL PDF
+            // Asegurate de subir tu archivo PDF a Netlify con el nombre exacto "test-postural.pdf"
+            const enlaceDescarga = document.createElement('a');
+            enlaceDescarga.href = 'test-postural.pdf'; 
+            enlaceDescarga.download = 'Test-Rescate-Postural-Quiropraxia.pdf'; // Nombre con el que se le guarda al paciente
+            document.body.appendChild(enlaceDescarga);
+            enlaceDescarga.click();
+            document.body.removeChild(enlaceDescarga);
+
+            // 2. PREPARAMOS EL WHATSAPP
             // Capturamos los datos del formulario
             const nombre = document.getElementById('name').value;
             const telefono = document.getElementById('phone').value;
             const tiempo = document.getElementById('time').value;
             
-            // Tu número de WhatsApp (con código de Argentina 54 9)
+            // Tu número de WhatsApp 
             const numeroWhatsApp = "5491168062077";
             
-            // Armamos el mensaje predeterminado
-            const mensaje = `Hola Quiropraxia San Pablo, vengo de la página web y quiero solicitar mi Evaluación Diagnóstica.%0A%0A👤 *Nombre:* ${nombre}%0A📱 *Teléfono:* ${telefono}%0A⏳ *Tiempo con dolor:* ${tiempo}`;
+            // Mensaje que te llegará a ti
+            const mensaje = `Hola Quiropraxia San Pablo, vengo de la página web.%0A%0AQuiero solicitar mi Evaluación Diagnóstica. (Ya se descargó mi Test de 3 Pasos).%0A%0A👤 *Nombre:* ${nombre}%0A📱 *Teléfono:* ${telefono}%0A⏳ *Tiempo con dolor:* ${tiempo}`;
             
-            // Creamos el enlace de WhatsApp y lo abrimos
+            // Creamos el enlace de WhatsApp
             const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
-            window.open(url, '_blank');
+            
+            // Abrimos WhatsApp con un pequeño retraso de medio segundo para no interrumpir la descarga del PDF
+            setTimeout(() => {
+                window.open(url, '_blank');
+            }, 500);
         }
     </script>
 </body>
