@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiropraxia San Pablo | Alivio Crónico para Emprendedores</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -14,11 +15,11 @@
                     },
                     colors: {
                         brand: {
-                            dark: '#0f172a',    // Slate 900
-                            primary: '#1e293b', // Slate 800
-                            accent: '#ea580c',  // Naranja moderno
+                            dark: '#0f172a',    
+                            primary: '#1e293b', 
+                            accent: '#ea580c',  
                             accentHover: '#c2410c',
-                            light: '#f8fafc'    // Fondo limpio
+                            light: '#f8fafc'    
                         }
                     },
                     boxShadow: {
@@ -29,7 +30,9 @@
             }
         }
     </script>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         html { scroll-behavior: smooth; }
@@ -41,10 +44,12 @@
 </head>
 <body class="bg-brand-light text-slate-700 antialiased selection:bg-brand-accent selection:text-white">
 
+    <!-- Top Bar -->
     <div class="bg-brand-dark text-white text-center py-2.5 text-xs sm:text-sm font-semibold tracking-widest uppercase">
         <span class="inline-block animate-pulse text-brand-accent mr-2">●</span> ATENCIÓN MORÓN Y ALREDEDORES
     </div>
 
+    <!-- Hero Section -->
     <section class="relative pt-16 pb-20 overflow-hidden">
         <div class="absolute inset-0 bg-pattern opacity-50 z-0"></div>
         
@@ -63,13 +68,22 @@
                     Si ya probaste masajes o kinesiología sin resultados definitivos... descubre el protocolo que te dará un <strong>50% de alivio en 4 semanas</strong> corrigiendo la raíz del problema.
                 </p>
 
-                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-4">
                     <a href="#agendar" class="inline-block bg-gradient-to-r from-brand-accent to-orange-500 hover:from-orange-500 hover:to-brand-accentHover text-white font-bold text-lg py-4 px-8 rounded-xl shadow-glow transform transition-all duration-300 hover:-translate-y-1 text-center w-full sm:w-auto border border-orange-400">
                         <span class="block text-sm font-medium text-orange-100 mb-1">🎁 DE REGALO CON TU EVALUACIÓN:</span>
                         Agendar y Recibir el Test de 3 Pasos
                     </a>
                 </div>
-                <p class="text-sm text-slate-500 mt-5 font-medium flex items-center justify-center lg:justify-start gap-2">
+                
+                <!-- NUEVA ESCASEZ EN HERO -->
+                <div class="bg-red-50 border border-red-100 rounded-lg p-3 inline-block mx-auto lg:mx-0">
+                    <p class="text-sm text-red-700 font-semibold flex items-center justify-center lg:justify-start gap-2">
+                        <i class="fa-solid fa-hourglass-half animate-pulse"></i> 
+                        Atención: Por la profundidad del análisis, solo abrimos 5 cupos por semana.
+                    </p>
+                </div>
+                
+                <p class="text-sm text-slate-500 mt-4 font-medium flex items-center justify-center lg:justify-start gap-2">
                     <i class="fa-solid fa-shield-check text-green-500"></i> Evaluaciones bajo estricto análisis exhaustivo.
                 </p>
             </div>
@@ -95,6 +109,7 @@
         </div>
     </section>
 
+    <!-- Testimonios Arriba -->
     <section class="bg-white py-16 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-12">
@@ -141,12 +156,11 @@
         </div>
     </section>
 
+    <!-- Filtro -->
     <section class="py-20 bg-slate-50">
         <div class="max-w-3xl mx-auto px-4">
-            
             <div class="bg-white p-8 md:p-12 rounded-3xl shadow-soft border border-slate-100 relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
-                
                 <div class="flex flex-col items-center text-center mb-10 mt-2">
                     <div class="bg-emerald-100 text-emerald-600 rounded-2xl w-16 h-16 flex items-center justify-center text-3xl mb-6">
                         <i class="fa-solid fa-check"></i>
@@ -154,7 +168,6 @@
                     <h3 class="text-3xl font-extrabold text-brand-dark tracking-tight">¿Para quién es este sistema?</h3>
                     <p class="text-slate-500 mt-3 font-medium">Diseñado exclusivamente si cumples con las siguientes características:</p>
                 </div>
-                
                 <ul class="space-y-6 text-slate-700">
                     <li class="flex items-start bg-slate-50 p-4 rounded-2xl border border-slate-100 transition hover:border-emerald-200 hover:bg-emerald-50/50">
                         <i class="fa-solid fa-check-circle text-emerald-500 mt-1 mr-4 text-xl flex-shrink-0"></i> 
@@ -174,10 +187,10 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </section>
 
+    <!-- Método -->
     <section class="py-20 bg-white border-y border-slate-200 overflow-hidden">
         <div class="max-w-6xl mx-auto px-4">
             
@@ -224,12 +237,12 @@
         </div>
     </section>
 
+    <!-- Formulario + Regalo -->
     <section id="agendar" class="pt-20 pb-24 bg-brand-dark relative overflow-hidden">
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-brand-accent opacity-20 blur-3xl"></div>
         <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-500 opacity-10 blur-3xl"></div>
         
         <div class="max-w-5xl mx-auto px-4 relative z-10">
-            
             <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
                 
                 <div class="w-full md:w-5/12 bg-gradient-to-br from-slate-50 to-slate-100 p-8 md:p-10 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-center items-center text-center">
@@ -237,7 +250,6 @@
                         Regalo Exclusivo por Agendar
                     </div>
                     
-                    <!-- NUEVA MINIATURA DEL PDF -->
                     <div class="w-32 md:w-40 rounded-lg shadow-xl mb-6 transform -rotate-3 hover:rotate-0 transition-transform duration-300 border border-slate-200 overflow-hidden bg-white">
                         <img src="portada-pdf.png" alt="Portada del Test Postural" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x420/ea580c/ffffff?text=Tu+Portada+Aqui';">
                     </div>
@@ -252,7 +264,13 @@
                 </div>
 
                 <div class="w-full md:w-7/12 p-8 md:p-10">
-                    <h3 class="text-2xl font-extrabold text-brand-dark mb-6">Solicita tu Evaluación Diagnóstica</h3>
+                    <h3 class="text-2xl font-extrabold text-brand-dark mb-2">Solicita tu Evaluación Diagnóstica</h3>
+                    
+                    <!-- NUEVA ESCASEZ SOBRE EL FORMULARIO -->
+                    <div class="bg-red-50 text-red-600 text-xs font-bold px-3 py-2 rounded-lg mb-6 border border-red-100 flex items-center justify-center md:justify-start gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        Solo aceptamos 5 nuevos pacientes por semana.
+                    </div>
                     
                     <form onsubmit="enviarWhatsApp(event)">
                         <div class="mb-5">
@@ -289,10 +307,10 @@
                         </div>
                     </form>
                 </div>
-                
             </div>
         </div>
 
+        <!-- Testimonios Abajo -->
         <div class="max-w-7xl mx-auto px-4 border-t border-slate-800/50 pt-16 mt-16 relative z-10 text-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-12 tracking-tight">Más historias de pacientes satisfechos</h3>
             
@@ -336,6 +354,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-[#080f1e] py-10 text-center text-slate-500 text-sm border-t border-slate-800">
         <div class="max-w-4xl mx-auto px-4">
             <p class="font-semibold text-slate-400 mb-2">&copy; 2024 Quiropraxia San Pablo. Todos los derechos reservados.</p>
@@ -347,31 +366,23 @@
         function enviarWhatsApp(event) {
             event.preventDefault(); 
             
-            // 1. FORZAMOS LA DESCARGA AUTOMÁTICA DEL PDF
-            // Asegurate de subir tu archivo PDF a Netlify con el nombre exacto "test-postural.pdf"
             const enlaceDescarga = document.createElement('a');
             enlaceDescarga.href = 'test-postural.pdf'; 
-            enlaceDescarga.download = 'Test-Rescate-Postural-Quiropraxia.pdf'; // Nombre con el que se le guarda al paciente
+            enlaceDescarga.download = 'Test-Rescate-Postural-Quiropraxia.pdf'; 
             document.body.appendChild(enlaceDescarga);
             enlaceDescarga.click();
             document.body.removeChild(enlaceDescarga);
 
-            // 2. PREPARAMOS EL WHATSAPP
-            // Capturamos los datos del formulario
             const nombre = document.getElementById('name').value;
             const telefono = document.getElementById('phone').value;
             const tiempo = document.getElementById('time').value;
             
-            // Tu número de WhatsApp 
             const numeroWhatsApp = "5491168062077";
             
-            // Mensaje que te llegará a ti
             const mensaje = `Hola Quiropraxia San Pablo, vengo de la página web.%0A%0AQuiero solicitar mi Evaluación Diagnóstica. (Ya se descargó mi Test de 3 Pasos).%0A%0A👤 *Nombre:* ${nombre}%0A📱 *Teléfono:* ${telefono}%0A⏳ *Tiempo con dolor:* ${tiempo}`;
             
-            // Creamos el enlace de WhatsApp
             const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
             
-            // Abrimos WhatsApp con un pequeño retraso de medio segundo para no interrumpir la descarga del PDF
             setTimeout(() => {
                 window.open(url, '_blank');
             }, 500);
