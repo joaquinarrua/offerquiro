@@ -71,7 +71,7 @@
                 <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-4 w-full">
                     <a href="#agendar" class="inline-block bg-gradient-to-r from-brand-accent to-orange-500 hover:from-orange-500 hover:to-brand-accentHover text-white font-bold text-lg py-4 px-6 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                         <span class="block text-sm md:text-base font-extrabold text-yellow-200 mb-1 tracking-wide animate-pulse">
-                            <i class="fa-solid fa-gift mr-1"></i> 50% OFF: DE $25.000 A SOLO $10.000
+                            <i class="fa-solid fa-gift mr-1"></i> DE <span class="line-through opacity-75">$25.000</span> A SOLO $10.000
                         </span>
                         Reclamar Beneficio y Agendar Turno
                     </a>
@@ -117,44 +117,59 @@
                 <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark tracking-tight">Pacientes reales que ya recuperaron su vida</h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonio 1 -->
-                <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
-                    <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-slate-600 text-sm italic leading-relaxed flex-grow mb-6">"Antes de empezar a hacerme ajustes en este lugar sufría de dolores constantes en la espalda baja y el cuello. Ahora cambió completamente mi vida."</p>
-                    <div class="flex items-center gap-3 pt-6 border-t border-slate-200">
-                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-lg">T</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonio 1: Tomás Castro -->
+                <div class="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full relative">
+                    <i class="fa-brands fa-google absolute top-6 right-6 text-xl text-slate-300"></i>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-[#7c564b] text-white rounded-full flex items-center justify-center font-medium text-lg">T</div>
                         <div>
-                            <p class="text-brand-dark font-bold text-sm">Tomás Castro</p>
-                            <p class="text-slate-500 text-xs flex items-center gap-1"><i class="fa-brands fa-google"></i> Google Reviews</p>
+                            <p class="text-brand-dark font-bold text-sm leading-none mb-1">Tomás Castro</p>
+                            <p class="text-slate-500 text-xs">1 opinión</p>
                         </div>
                     </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-yellow-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span class="text-slate-500 text-xs font-medium">Hace 3 semanas</span>
+                    </div>
+                    <p class="text-slate-700 text-sm leading-relaxed flex-grow">"Antes de empezar a hacerme ajustes en este lugar sufría de dolores constantes en la espalda baja y el cuello, esto acompañado de mucho estrés y dificultades para realizar mis tareas cotidianas. Estuve años sin tratarme y el dolor era muy fuerte.<br><br>Desde que empecé a tratarme con Joaquín hace 7 meses todo fue mejorando, siempre tuvo la mejor predisposición y atención. En estos meses las mejoras empezaron a sentirse en mi cuerpo y mente, me siento renovado y puedo disfrutar de actividades que antes me costaba mucho realizar.<br><br>Recomiendo totalmente a cualquiera que esté pasando por una situación parecida y no se este tratando es una terapia muy efectiva, el ambiente es ameno y profesional."</p>
                 </div>
 
-                <!-- Testimonio 2 -->
-                <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
-                    <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-slate-600 text-sm italic leading-relaxed flex-grow mb-6">"Mi problema era hernia de discos... muchos dolores en ambas piernas, hormigueos... recurrí a un bastón (y tengo 40 años). Hoy ando normal."</p>
-                    <div class="flex items-center gap-3 pt-6 border-t border-slate-200">
-                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center font-bold text-lg">M</div>
+                <!-- Testimonio 2: Manuel Enrique Medina -->
+                <div class="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full relative">
+                    <i class="fa-brands fa-google absolute top-6 right-6 text-xl text-slate-300"></i>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-[#4b5e65] text-white rounded-full flex items-center justify-center font-medium text-lg">M</div>
                         <div>
-                            <p class="text-brand-dark font-bold text-sm">Manuel E. Medina</p>
-                            <p class="text-slate-500 text-xs flex items-center gap-1"><i class="fa-brands fa-google"></i> Google Reviews</p>
+                            <p class="text-brand-dark font-bold text-sm leading-none mb-1">Manuel Enrique Medina</p>
+                            <p class="text-slate-500 text-xs">2 opiniones</p>
                         </div>
                     </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-yellow-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span class="text-slate-500 text-xs font-medium">Hace 8 semanas</span>
+                    </div>
+                    <p class="text-slate-700 text-sm leading-relaxed flex-grow">"Hola soy Manuel, cuando llegue a Quiropraxia San Pablo, mi problema era hernia de discos en L 3 - L 4 - L 5 de columna vertebral la L 5 la más complicada, llegue con mchas complicaciones y muchos dolores en ambas piernas ,hormigueos, adormecimientos, que me aplastaban los nervios, dolores piernas, glúteos dedos de los pies, no podía caminar recuri a un bastón( ya no lo uso). Me recomendó el Licenciado Joaquin el tratamiento de tres meses y tres ajustes por semana, ya estoy en el segundo tratamiento de dos meses y dos ajustes por semana, ya no tengo esas molestias que anuncie anteriormente, lento pero muy eficaz. Se los recomiendo no duden es MUY BUENO.<br>Saludos y bendiciones. Ñ"</p>
                 </div>
 
-                <!-- Testimonio 3 -->
-                <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
-                    <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-slate-600 text-sm italic leading-relaxed flex-grow mb-6">"Después de meses de tener constante dolor cervical, dorsal y lumbar llegar a Quiropraxia San Pablo me cambió la vida."</p>
-                    <div class="flex items-center gap-3 pt-6 border-t border-slate-200">
-                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold text-lg">C</div>
+                <!-- Testimonio 3: pablo garcia (Movido y adaptado a tema claro) -->
+                <div class="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full relative md:col-span-2 max-w-3xl mx-auto w-full">
+                    <i class="fa-brands fa-google absolute top-6 right-6 text-xl text-slate-300"></i>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-[#e64a19] text-white rounded-full flex items-center justify-center font-medium text-lg relative">
+                            P
+                            <span class="absolute -bottom-1 -right-1 text-[10px] text-yellow-500 bg-white rounded-full leading-none p-[1px]"><i class="fa-solid fa-certificate"></i></span>
+                        </div>
                         <div>
-                            <p class="text-brand-dark font-bold text-sm">Claudia Serra</p>
-                            <p class="text-slate-500 text-xs flex items-center gap-1"><i class="fa-brands fa-google"></i> Google Reviews</p>
+                            <p class="text-brand-dark font-bold text-sm leading-none mb-1">pablo garcia</p>
+                            <p class="text-slate-500 text-[11px] mt-0.5">Local Guide • 121 opiniones</p>
                         </div>
                     </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-yellow-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span class="text-slate-500 text-xs font-medium">Hace 9 semanas</span>
+                    </div>
+                    <p class="text-slate-700 text-sm leading-relaxed flex-grow">"Excelente lugar y diría de los pocos para ese tipo de tratamiento con tanta vocación y Excelente atención !! En mi caso fui mal probado de todo y fui mejorando poco a poco lo importante es la constancia y disciplina para ver los cambios...El licenciado se toma el tiempo y explica todo...recomiendo sin dudas..."</p>
                 </div>
             </div>
         </div>
@@ -218,8 +233,12 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-3xl shadow-soft border border-slate-100 transition-all hover:shadow-xl hover:-translate-y-2 group flex flex-col items-center text-center relative overflow-hidden">
                     <div class="absolute top-0 inset-x-0 h-1 bg-red-500"></div>
+                    <div class="bg-red-50 text-red-600 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">Paso 1</div>
+                    <div class="w-16 h-16 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mb-6 text-2xl shadow-sm border border-red-100 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                     <h4 class="text-xl font-bold text-brand-dark mb-4"><strong>Evaluación Analítica</strong></h4>
-                    <p class="text-slate-600 leading-relaxed text-sm lg:text-base">Evaluación analítica con sistema Touch and Tell. Antes de realizar cualquier ajuste, dedicamos la primera sesión a analizar tu columna en detalle. Con nuestro sistema Touch and Tell, evaluamos cada parámetro biomecánico y te mostramos exactamente qué está ocurriendo, para que entiendas el origen de tu dolor antes de empezar tu tratamiento.</p>
+                    <p class="text-slate-600 leading-relaxed text-sm lg:text-base">Antes de cualquier ajuste, dedicamos la primera sesión a <strong>analizar tu columna en detalle</strong> con nuestro sistema Touch and Tell para encontrar el origen del dolor.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl shadow-soft border border-slate-100 transition-all hover:shadow-xl hover:-translate-y-2 group flex flex-col items-center text-center relative overflow-hidden">
@@ -321,44 +340,58 @@
         <div class="max-w-7xl mx-auto px-4 border-t border-slate-800/50 pt-16 mt-16 relative z-10 text-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-12 tracking-tight">Más historias de pacientes satisfechos</h3>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                <!-- Testimonio 4 -->
-                <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors">
-                    <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-slate-300 text-sm italic leading-relaxed flex-grow">"Excelente lugar y diría de los pocos para ese tipo de tratamiento con tanta vocación. Cambió mi vida completamente."</p>
-                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-700">
-                        <div class="w-10 h-10 bg-slate-700 text-slate-300 rounded-full flex items-center justify-center font-bold">P</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <!-- Testimonio 4: Nico Cardenas -->
+                <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors relative">
+                    <i class="fa-brands fa-google absolute top-6 right-6 text-xl text-slate-600"></i>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-[#1e293b] text-white rounded-full flex items-center justify-center font-medium text-lg overflow-hidden border border-slate-600">
+                            N
+                        </div>
                         <div>
-                            <p class="text-white font-bold text-sm">Pablo Garcia</p>
-                            <p class="text-slate-400 text-xs flex items-center gap-1"><i class="fa-brands fa-google"></i> Google Reviews</p>
+                            <p class="text-white font-bold text-sm leading-none mb-1">Nico Cardenas</p>
+                            <p class="text-slate-400 text-xs">4 opiniones</p>
                         </div>
                     </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-yellow-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span class="text-slate-400 text-xs font-medium">Hace 3 semanas</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed flex-grow">"Empecé por largos años de molestia y dolor lumbar sintiendo que algo no estaba bien en mi postura y viniendo confirmé mis sospechas!<br>Super profesional, explicativo, amable y calido en sus recomendaciones y trabajo, super recomiendo !"</p>
                 </div>
 
-                <!-- Testimonio 5 -->
-                <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors">
-                    <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-slate-300 text-sm italic leading-relaxed flex-grow">"Empecé por largos años de molestia y dolor lumbar. Después del tratamiento me siento mejor que nunca."</p>
-                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-700">
-                        <div class="w-10 h-10 bg-slate-700 text-slate-300 rounded-full flex items-center justify-center font-bold">N</div>
+                <!-- Testimonio 5: pablo torrero -->
+                <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors relative">
+                    <i class="fa-brands fa-google absolute top-6 right-6 text-xl text-slate-600"></i>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-[#c2185b] text-white rounded-full flex items-center justify-center font-medium text-lg">P</div>
                         <div>
-                            <p class="text-white font-bold text-sm">Nico Cardenas</p>
-                            <p class="text-slate-400 text-xs flex items-center gap-1"><i class="fa-brands fa-google"></i> Google Reviews</p>
+                            <p class="text-white font-bold text-sm leading-none mb-1">pablo torrero</p>
+                            <p class="text-slate-400 text-xs">6 opiniones</p>
                         </div>
                     </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-yellow-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span class="text-slate-400 text-xs font-medium">Hace 7 semanas</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed flex-grow">"Excelente atención. Los turnos se respetan y comienzan puntualmente en el horario asignado. Joaquin es un profesional de primer nivel, predispuesto a brindar un servicio de gran calidad."</p>
                 </div>
 
-                <!-- Testimonio 6 -->
-                <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors">
-                    <div class="flex text-yellow-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-slate-300 text-sm italic leading-relaxed flex-grow">"Llegué con un dolor crónico de años, habiendo probado masajes sin éxito. Desde que arranqué el tratamiento recuperé mi vida."</p>
-                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-700">
-                        <div class="w-10 h-10 bg-slate-700 text-slate-300 rounded-full flex items-center justify-center font-bold">M</div>
+                <!-- Testimonio 6: Mariano Speranza Toledo (Movido y adaptado a tema oscuro) -->
+                <div class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm flex flex-col h-full hover:bg-slate-800/80 transition-colors relative md:col-span-2 max-w-3xl mx-auto w-full">
+                    <i class="fa-brands fa-google absolute top-6 right-6 text-xl text-slate-600"></i>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-[#005a9e] text-white rounded-full flex items-center justify-center font-medium text-lg">M</div>
                         <div>
-                            <p class="text-white font-bold text-sm">Marcela Fernández</p>
-                            <p class="text-slate-400 text-xs flex items-center gap-1"><i class="fa-brands fa-google"></i> Google Reviews</p>
+                            <p class="text-white font-bold text-sm leading-none mb-1">Mariano Speranza Toledo</p>
+                            <p class="text-slate-400 text-xs">3 opiniones</p>
                         </div>
                     </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex text-yellow-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span class="text-slate-400 text-xs font-medium">Hace 8 semanas</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed flex-grow">"Fui para atenderme por dolores en la espalda media y cervical que me generaban migrañas.<br>A mitad de tratamiento ya mejore en un 90 %.<br>Ademas de eficacia, la atencion en super profesional y organizada."</p>
                 </div>
             </div>
         </div>
