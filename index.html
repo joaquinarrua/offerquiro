@@ -438,7 +438,8 @@ function gtag_report_conversion(url) {
     <script>
         function enviarWhatsApp(event) {
             event.preventDefault(); 
-            
+            // Dispara la conversión a Google Ads
+        gtag('event', 'conversion', {'send_to': 'AW-757393246/pZDYCI2s6ugcEN7Ok-kC'});
             const enlaceDescarga = document.createElement('a');
             enlaceDescarga.href = 'Test-postural.pdf'; 
             enlaceDescarga.download = 'Test-Rescate-Postural-Quiropraxia.pdf'; 
