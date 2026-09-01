@@ -353,77 +353,32 @@ function gtag_report_conversion(url) {
         </div>
     </section>
 
-   <!-- Sección de Contacto y Regalo PDF -->
-    <section id="agendar" class="pt-20 pb-24 bg-brand-dark relative overflow-hidden">
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-brand-accent opacity-20 blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-500 opacity-10 blur-3xl"></div>
-        
-        <div class="max-w-5xl mx-auto px-4 relative z-10">
-            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
-                
-                <div class="w-full md:w-5/12 bg-gradient-to-br from-slate-50 to-slate-100 p-8 md:p-10 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-center items-center">
-                    <div class="bg-red-100 text-red-600 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest mb-6 inline-block border border-red-200">
-                        <span class="text-sm">🔥 Test de Regalo</span>
-                    </div>
-                    
-                    <div class="w-32 md:w-40 rounded-lg shadow-xl mb-6 transform -rotate-3 hover:rotate-0 transition-transform duration-300 border border-slate-200 overflow-hidden bg-white">
-                        <img src="portada-pdf.png" alt="Portada del Test Postural" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/300x420/ea580c/fff'">
-                    </div>
-                    
-                    <h3 class="text-xl font-bold text-brand-dark mb-3">Evaluación Especial: <span class="line-through text-slate-400 text-lg">$25.000</span> <span class="text-brand-accent">$10.000</span></h3>
-                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        Completa tus datos para reservar tu Evaluación y <strong>el Test Postural en PDF se descargará automáticamente</strong>.
-                    </p>
-                    <p class="text-sm font-semibold italic text-brand-accent">
-                        "No hay mayor ciencia que la que se basa en la evidencia."
-                    </p>
-                </div>
+<!-- Sección de Contacto Directo por WhatsApp -->
+<section id="contacto" class="py-20 bg-slate-900 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <span class="bg-orange-500/20 text-orange-400 text-xs font-bold uppercase tracking-wider py-1.5 px-4 rounded-full inline-block mb-4">Paso Final</span>
+    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Reservá tu Evaluación de Ingreso </h2>
+    <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto mb-10">
+       Hablá directamente con el consultorio para coordinar tu turno y llevarte el Test Postural de regalo.
+    </p>
 
-                <div class="w-full md:w-7/12 p-8 md:p-10">
-                    <h3 class="text-2xl font-extrabold text-brand-dark mb-2">Solicita tu Evaluación Diagnóstica</h3>
-                    
-                    <div class="bg-red-50 text-red-600 text-xs font-bold px-3 py-2 rounded-lg mb-6 border border-red-100 flex items-center justify-center md:justify-start gap-2">
-                        <i class="fa-solid fa-clock"></i>
-                        Solo abrimos 5 nuevos pacientes por semana.
-                    </div>
-                    
-                    <form onsubmit="enviarWhatsApp(event)">
-                        <div class="mb-5">
-                            <label class="block text-slate-700 text-xs font-bold mb-2 uppercase tracking-wide" for="name">Nombre Completo</label>
-                            <input class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-brand-accent transition" id="name" type="text" placeholder="Tu nombre completo" required>
-                        </div>
-                        
-                        <div class="mb-5">
-                            <label class="block text-slate-700 text-xs font-bold mb-2 uppercase tracking-wide" for="phone">Teléfono (WhatsApp)</label>
-                            <input class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-brand-accent transition" id="phone" type="tel" placeholder="+54 9 11 1234-5678" required>
-                        </div>
+    <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 md:p-12 shadow-2xl max-w-2xl mx-auto">
+      <div class="mb-6">
+        <span class="text-slate-400 text-sm line-through block mb-1">Valor habitual: $25.000</span>
+        <span class="text-4xl md:text-5xl font-extrabold text-white">$10.000 <span class="text-sm font-normal text-emerald-400">(Incluye RX y PDF)</span></span>
+      </div>
 
-                        <div class="mb-8">
-                            <label class="block text-slate-700 text-xs font-bold mb-2 uppercase tracking-wide" for="time">Tiempo con dolor</label>
-                            <div class="relative">
-                                <select class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl py-3 px-4 appearance-none leading-tight focus:outline-none focus:bg-white focus:border-brand-accent transition" id="time" required>
-                                    <option>Menos de 1 mes (No califica)</option>
-                                    <option selected>De 1 a 6 meses</option>
-                                    <option>Más de 6 meses (Crónico)</option>
-                                    <option>Años probando de todo</option>
-                                </select>
-                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
-                                    <i class="fa-solid fa-chevron-down text-sm"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="w-full bg-brand-dark hover:bg-brand-primary text-white font-bold py-4 px-4 rounded-xl shadow-lg focus:outline-none focus:ring-4 focus:ring-brand-accent/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center justify-center">
-                            <span class="flex items-center gap-2"><i class="fa-solid fa-tags text-yellow-400"></i> Reservar Evaluación por $10.000</span>
-                            <span class="text-xs text-brand-accent mt-1 font-medium tracking-wide">+ DESCARGA AUTOMÁTICA DEL TEST</span>
-                        </button>
-                        <div class="flex items-center justify-center mt-5 text-slate-400 text-xs font-medium">
-                            <i class="fa-solid fa-lock mr-2"></i> Datos 100% seguros y confidenciales.
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+      <!-- Botón Directo a WhatsApp -->
+      <a href="https://wa.me/5491168062077/?text=Hola%20Joaquín,%20quiero%20reservar%20mi%20Evaluación%20de%20Ingreso%20por%20$10.000" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20ba5a] text-white font-extrabold py-5 px-8 rounded-2xl shadow-xl transition-all text-xl mb-4">
+        <i class="fa-brands fa-whatsapp text-2xl"></i> Hablar por WhatsApp y Reservar
+      </a>
+      
+      <p class="text-xs text-slate-400 mt-4">
+        <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Atención personalizada con el Lic. Joaquín Arrúa (MP 6781) en Morón.
+      </p>
+    </div>
+  </div>
+</section>
 
         <!-- Testimonios Abajo -->
         <div class="max-w-7xl mx-auto px-4 border-t border-slate-800/50 pt-16 mt-16 relative z-10 text-center">
