@@ -427,40 +427,55 @@ function gtag_report_conversion(url) {
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#080f1e] py-10 text-center text-slate-500 text-sm border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-4">
-            <p class="font-semibold text-slate-400 mb-2">&copy; 2024 Quiropraxia San Pablo. Todos los derechos reservados.</p>
-            <p class="max-w-2xl mx-auto leading-relaxed">Esta página no pretende diagnosticar, tratar, curar ni prevenir ninguna enfermedad médica a distancia. Todo tratamiento requiere una evaluación profesional.</p>
-        </div>
-    </footer>
+  <!-- Sección de Contacto Directo por WhatsApp (Optimizada para Celulares) -->
+<section class="py-16 bg-slate-50 px-4" id="contacto">
+  <div class="max-w-3xl mx-auto text-center">
+    <div class="bg-white p-6 md:p-12 rounded-3xl shadow-soft border border-slate-100 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
+      
+      <div class="mb-6 mt-2">
+        <span class="bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full inline-block mb-3">Atención Directa y Personalizada</span>
+        <h3 class="text-2xl md:text-4xl font-extrabold text-brand-dark tracking-tight mb-3">No sigas aguantando el dolor. Hablemos hoy mismo.</h3>
+        <p class="text-slate-600 text-sm md:text-lg">Sin formularios largos ni esperas. Escribime directamente por WhatsApp para coordinar tu evaluación.</p>
+      </div>
 
-    <script>
-        function enviarWhatsApp(event) {
-            event.preventDefault(); 
-            // Dispara la conversión a Google Ads
-        gtag('event', 'conversion', {'send_to': 'AW-757393246/pZDYCI2s6ugcEN7Ok-kC'});
-            const enlaceDescarga = document.createElement('a');
-            enlaceDescarga.href = 'Test-postural.pdf'; 
-            enlaceDescarga.download = 'Test-Rescate-Postural-Quiropraxia.pdf'; 
-            document.body.appendChild(enlaceDescarga);
-            enlaceDescarga.click();
-            document.body.removeChild(enlaceDescarga);
+      <div class="flex flex-col items-center justify-center gap-4">
+        <button onclick="enviarWhatsApp(event)" class="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white text-lg font-bold py-4 px-6 rounded-2xl shadow-lg transition-all active:scale-95 cursor-pointer">
+          <i class="fa-brands fa-whatsapp text-2xl"></i>
+          Agendar Evaluación por WhatsApp
+        </button>
+        <p class="text-slate-500 text-xs mt-1">Te respondemos en minutos. Sin compromisos.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            const nombre = document.getElementById('name').value;
-            const telefono = document.getElementById('phone').value;
-            const tiempo = document.getElementById('time').value;
-            
-            const numeroWhatsApp = "5491168062077";
-            
-            const mensaje = `Hola Quiropraxia San Pablo, vengo de la página web.%0A%0AQuiero solicitar mi Evaluación Diagnóstica.%0AEvaluación: $10.000%0A%0AMi nombre es: ${nombre}%0AMi teléfono: ${telefono}%0AMotivo: ${tiempo}`;
-            
-            const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
-            
-            setTimeout(() => {
-                window.open(url, '_blank');
-            }, 500);
-        }
-    </script>
+<!-- Footer -->
+<footer class="bg-[#080f1e] py-8 text-center text-slate-500 text-xs md:text-sm border-t border-slate-800">
+  <div class="max-w-4xl mx-auto px-4">
+    <p class="font-semibold text-slate-400 mb-2">&copy; 2026 Quiropraxia San Pablo. Todos los derechos reservados.</p>
+    <p class="max-w-2xl mx-auto leading-relaxed">Esta página no pretende diagnosticar, tratar, curar ni prevenir ninguna enfermedad médica a distancia. Todo tratamiento requiere una evaluación profesional.</p>
+  </div>
+</footer>
+
+<script>
+function enviarWhatsApp(event) {
+  event.preventDefault();
+  
+  // Dispara la conversión a Google Ads
+  gtag('event', 'conversion', {'send_to': 'AW-757393246/pZDYCI2s6ugcEN7Ok-kC'});
+  
+  // Abre el PDF en una pestaña nueva para visualizarlo online
+  window.open('Test-postural.pdf', '_blank');
+
+  const numeroWhatsApp = "5491168062077";
+  const mensaje = "Hola Quiropraxia San Pablo, vengo de la página web y quiero coordinar mi evaluación.";
+  const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+  
+  setTimeout(() => {
+    window.open(url, '_blank');
+  }, 500);
+}
+</script>
 </body>
 </html>
